@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    color: #333;
+}
+.keyword { color: #0000ff; font-weight: bold; }
+.type { color: #2b91af; font-weight: bold; }
+.string { color: #a31515; }
+.comment { color: #008000; font-style: italic; }
+.number { color: #098658; }
+</style>
+</head>
+<body>
+
+<pre>
+<span class="keyword">void</span> <span class="keyword">select</span>() {
+    <span class="type">int</span> cpt = 1;
+    <span class="type">int</span> coup_a_renvoyer = <span class="keyword">premier</span> <span class="keyword">coup</span> <span class="keyword">possible</span>;
+
+    <span class="keyword">for</span> (<span class="type">int</span> coup = <span class="keyword">prochain</span> <span class="keyword">coup</span>; coup < <span class="keyword">fin</span>; coup++) {
+        <span class="type">int</span> x = <span class="keyword">rand</span>() % (cpt + 1);
+        cpt += 1;
+
+        <span class="keyword">if</span> (x == 0) {
+            coup_a_renvoyer = coup;
+        }
+    }
+
+    <span class="keyword">return</span> coup_a_renvoyer;
+}
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    color: #333;
+}
+.keyword { color: #0000ff; font-weight: bold; }
+.type { color: #2b91af; font-weight: bold; }
+.string { color: #a31515; }
+.comment { color: #008000; font-style: italic; }
+.number { color: #098658; }
+</style>
+</head>
+<body>
+
+<pre>
+<span class="type">int</span>* <span class="keyword">select</span>(<span class="type">int</span>* tab, <span class="type">int</span> n, <span class="type">int</span> k) {
+    <span class="type">int</span>* res = <span class="keyword">malloc</span>(k * <span class="keyword">sizeof</span>(<span class="type">int</span>));
+    <span class="keyword">for</span> (<span class="type">int</span> i = 0; i < k; i += 1) {
+        res[i] = tab[k];
+    }
+    <span class="keyword">for</span> (<span class="type">int</span> i = k; i < n; i += 1) {
+        <span class="type">int</span> x = <span class="keyword">rand</span>() % (i + 1);
+        <span class="keyword">if</span> (x < k) {
+            res[x] = tab[i];
+        }
+    }
+    <span class="keyword">return</span> res;
+}
+</pre>
+
+</body>
+</html>

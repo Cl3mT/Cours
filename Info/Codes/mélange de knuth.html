@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    color: #333;
+}
+.keyword { color: #0000ff; font-weight: bold; }
+.type { color: #2b91af; font-weight: bold; }
+.string { color: #a31515; }
+.comment { color: #008000; font-style: italic; }
+.number { color: #098658; }
+</style>
+</head>
+<body>
+
+<pre>
+<span class="keyword">void</span> <span class="keyword">shuffle</span>(<span class="type">int</span>* tab, <span class="type">int</span> n) {
+    <span class="keyword">for</span> (<span class="type">int</span> i = 1; i < n; i += 1) {
+        <span class="type">int</span> k = <span class="keyword">rand</span>() % (i + 1);
+    }
+    <span class="keyword">swap</span>(tab, i, k);
+}
+</pre>
+
+</body>
+</html>
