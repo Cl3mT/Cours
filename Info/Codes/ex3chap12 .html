@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        pre {
+            font-family: "Courier New", monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .keyword {
+            color: blue;
+            font-weight: bold;
+        }
+        .symbol {
+            color: darkred;
+        }
+        .variable {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        <span class="keyword"># Trier</span> <span class="variable">les arêtes</span> <span class="keyword">par poids décroissant</span>
+        <span class="variable">C</span> &larr; <span class="symbol">&empty;</span>
+        <span class="keyword">pour chaque</span> <span class="variable">arête</span> <span class="keyword">dans le sens trié</span> :
+            <span class="keyword">si</span> <span class="variable">C</span> <span class="symbol">&cup;</span> {<span class="variable">a</span>} <span class="keyword">est un couplage</span> :
+                <span class="variable">C</span> &larr; <span class="variable">C</span> <span class="symbol">&cup;</span> {<span class="variable">a</span>}
+        <span class="keyword">Renvoyer</span> <span class="variable">C</span>
+    </pre>
+</body>
+</html>

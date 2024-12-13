@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        pre {
+            font-family: "Courier New", monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .keyword {
+            color: blue;
+            font-weight: bold;
+        }
+        .symbol {
+            color: darkred;
+        }
+        .variable {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        <span class="keyword"># Trier</span> <span class="variable">t<sub>i</sub></span> <span class="keyword">par valeurs décroissantes</span>
+        <span class="variable">S</span> &larr; 0
+        <span class="keyword">pour</span> <span class="variable">i</span> <span class="keyword">allant de</span> 1 <span class="keyword">à</span> <span class="variable">n</span> :
+            <span class="keyword">si</span> <span class="variable">t<sub>i</sub></span> + <span class="variable">S</span> <span class="symbol">&le;</span> <span class="variable">C</span> :
+                <span class="variable">S</span> &larr; <span class="variable">S</span> + <span class="variable">t<sub>i</sub></span>
+        <span class="keyword">renvoyer</span> <span class="variable">S</span>
+    </pre>
+</body>
+</html>
